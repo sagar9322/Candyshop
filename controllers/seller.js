@@ -39,7 +39,10 @@ exports.updateItemDetail = async (req, res, next) => {
             id: prodId,
         },
     });
-    const updatedQuantity = quantity.dataValues.quantity - number;
+    let updatedQuantity = quantity.dataValues.quantity - number;
+    if(updatedQuantity < 0){
+        updatedQuantity = 0;
+    }
     await sellerItemDetail.update(
         { quantity: updatedQuantity },
         { where: { id: prodId } }

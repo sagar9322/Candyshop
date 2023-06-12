@@ -13,7 +13,7 @@ const sequelize = require('./util/database');
 const sellerRoutes = require('./routes/sellerRoutes');
 app.use(sellerRoutes);
 
-// Start the server
+// Start the server{
 sequelize
     .sync()
     .then(result => {

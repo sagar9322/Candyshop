@@ -6,63 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candy Shop Seller Dashboard</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-
-        #form {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-        }
-
-        .sub-container {
-            display: flex;
-            width: 20%;
-            flex-direction: column;
-            align-items: start;
-        }
-
-        #btn-div {
-            height: 100%;
-        }
-
-        #btn {
-            margin-top: 18px;
-        }
-
-        #btn {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #18738a9f;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .buy-btn {
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #b92275;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="candyShop.css">
 </head>
 
 <body>
@@ -86,13 +30,13 @@
             </div>
 
             <div class="sub-container" id="btn-div">
-                <input type="button" onclick="addItem(event)" id="btn" value="Add Item">
+                <button type="submit" onclick="addItem(event)" id="btn" value="Add Item">Add Item</button>
             </div>
 
         </form>
     </div>
     <div class="summary">
-        <h2>item-list Here</h2>
+        <h2>Avilable Products</h2>
         <ul id="item-list">
         </ul>
     </div>
